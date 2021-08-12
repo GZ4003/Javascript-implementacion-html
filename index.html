@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        span{
+            display: inline-flex;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .calculador{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        .calculador div button{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>calculadora</h2>
+    <div class="calculador">
+        <ul>
+            <li>
+                <span>podes hacer sumas</span>
+            </li>
+            <li>
+                <span>se puede hacer operaciones </span>
+            </li>
+            <li>
+                <span>resultado de las cosas lo vas a ver ahi en el coso</span>
+            </li>
+        </ul>
+        <div>
+            <span>resultado</span>
+            <span id="resultado"></span>
+        </div>
+        <button onclick={calcular()}>calcular</button>
+    </div>
+    
+       
+    
+
+
+ <!-- <h1>Renacemos</h1>
+    <button onclick={prueba()}>apretar</button>
+    <span>El resultado es</span>
+    <span id="resultado"></span>
+    <br>
+    <br> -->
+    <script src="./main.js"></script>
+</body>
+</html>
